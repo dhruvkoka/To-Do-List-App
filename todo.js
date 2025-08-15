@@ -41,9 +41,6 @@ function render(){
     }
     output.innerHTML=finallist
 }
-checkbox.addEventListener("change", function (){
-    if (checkbox.checked){
-        output.innerHTML=""
-    }
 
-})
+
+
