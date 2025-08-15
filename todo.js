@@ -1,20 +1,23 @@
-let todo=document.getElementById("todo")
+const todo=document.getElementById("todo")
 let insert=document.getElementById("insert")
 let del=document.getElementById("delete")
-let value=todo.value
 let output=document.getElementById("output")
+let value=todo.value
 
 
 insert.addEventListener("click",function(){
+    let value=todo.value
+    localStorage.setItem("value",JSON.stringify(value))
+    output.textContent=JSON.parse(localStorage.getItem("value"))
 
-    localStorage.setItem(value,value)
-    output.innerHTML=localStorage.getItem(value)
 
 })
 del.addEventListener("click",function(){
     localStorage.clear()
-    output.innerHTML=""
+    output.textContent=""
     todo.value=""
+
 })
+
 
 
