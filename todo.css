@@ -1,0 +1,53 @@
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body{
+    background-image: linear-gradient(#0061FF,#60EFFF);
+    background-attachment: fixed;
+    font-family:"Roboto", sans-serif;
+
+
+}
+.center{
+    text-align:center;
+    color:white;
+    margin-top:150px;
+    font-size: 26px;
+    
+}
+.textcen{
+    background-color:antiquewhite;
+    text-align:center;
+    height:600px;
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:12px;
+
+    
+}
+.centop{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;   
+    border:none;
+    gap:20px;
+
+
+}
+.centerfirst{
+    margin-top:20px;
+    font-size:18px;
+
+}
+#todo{
+    margin-left:-40px;
+}
+
