@@ -37,7 +37,13 @@ del.addEventListener("click",function(){
 function render(){
     let finallist=""
     for (let i=0;i<todosList.length;i++){
-        finallist+=`<li>${todosList[i]}</li>`
+        finallist+=`<ul><input type="checkbox" class="todo-checkbox" data-index="${i}"> ${todosList[i]}</ul>`
     }
     output.innerHTML=finallist
 }
+checkbox.addEventListener("change", function (){
+    if (checkbox.checked){
+        output.innerHTML=""
+    }
+
+})

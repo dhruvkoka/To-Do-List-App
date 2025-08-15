@@ -30,6 +30,7 @@ body{
     margin-left:auto;
     margin-right:auto;
     border-radius:12px;
+    position:relative;
 
     
 }
@@ -39,15 +40,65 @@ body{
     justify-content:center;   
     border:none;
     gap:20px;
+    margin-left:0px;
 
 
 }
 .centerfirst{
     margin-top:20px;
-    font-size:18px;
+
+    
 
 }
+
 #todo{
-    margin-left:-40px;
+    font-size:20px;
+    width:400px;
+    height:50px;
+    border:none;
+    border-radius: 50px;
+    font-family:"Roboto";
+    text-indent: 20px;
+    
 }
+#insert{
+    background-color:green;
+    border:none;
+    border-radius: 50px;
+    font-weight:bold;
+    color:white;
+    width:100px;
+    font-size:18px;
+}
+#delete{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    background-color:red;
+    border:none;
+    border-radius: 50px;
+    font-weight:bold;
+    color:white;
+    height:50px;
+    width:100px;
+    font-size:18px;
+}
+#output{
+    text-align:start;
+    margin-top:20px;
+    margin-left: 30px;
+    font-weight:bold;
+    font-size:25px;
+    color:black;
+
+}
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;     
+    accent-color: blue;
+    border-radius: 50%; 
+    cursor: pointer;   
+}
+
+
 
